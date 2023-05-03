@@ -6,21 +6,24 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { GalleryModule } from './gallery/gallery.module';
+
 import { ProductsModule } from './products/products.module';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ServicesModule } from './services/services.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    AboutusComponent
+    AboutusComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProductsModule
-    GalleryModule
+    ProductsModule,
+    ServicesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
