@@ -9,6 +9,7 @@ import { DataentryComponent } from './dataentry/dataentry.component';
 import { SeoserviceComponent } from './seoservice/seoservice.component';
 
 
+
 @NgModule({
   declarations: [
     ServicesComponent,
@@ -16,6 +17,7 @@ import { SeoserviceComponent } from './seoservice/seoservice.component';
     GraphicdesignComponent,
     DataentryComponent,
     SeoserviceComponent
+
   ],
   imports: [
     CommonModule,
