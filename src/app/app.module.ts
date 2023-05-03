@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { GalleryModule } from './gallery/gallery.module';
+import { ProductsModule } from './products/products.module';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { GalleryModule } from './gallery/gallery.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ProductsModule
     GalleryModule
   ],
   providers: [],
