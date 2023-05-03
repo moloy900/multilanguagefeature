@@ -15,11 +15,13 @@
                 voluptas expedita delectus praesentium dicta sunt consectetur neque, hic numquam laudantium sapiente
                 voluptate totam suscipit, saepe dolorem iure repellendus quis! Culpa, iste cupiditate?</p>
         </div>
-        <div class="col-md-12 mt-4">
-            <figure>
-                <img src="assets\home.jpg" alt="" class="img-thumbnail">
-               <figcaption>Image1</figcaption>
+        <div class="col-md-12 mt-4 d-flex">
+           <ng-container *ngFor="let image of images">
+            <figure class="mx-3">
+                <img src="{{image.imgUrl}}" alt="" class="img-thumbnail">
+               <figcaption class="text-center">{{image.title}}</figcaption>
             </figure>
+           </ng-container>
         </div>
     </div>
 </div>
