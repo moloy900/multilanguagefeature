@@ -1,0 +1,53 @@
+
+<div class="py-3">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>DashBoard</h3>
+        </div>
+        <div class="col-md-6 text-end">
+            <button class="btn btn-outline-success btn-sm"><span>&#10010; </span>Add Employee</button>
+        </div>
+        <div class="col-md-12">
+            <hr>
+            <div class="bg-light px-2 py-3 d-flex justify-content-between">
+                <h5>Welcome User</h5>
+  
+                <div>
+                    <span class="border border-secondary px-3 py-2 text-dark bg-white"><fa-icon
+                            [icon]="listViewDetails"></fa-icon></span>&nbsp;&nbsp;
+                    <span class="border border-secondary px-3 py-2 text-dark bg-white"><fa-icon
+                            [icon]="listviewTable"></fa-icon></span>
+                </div>
+  
+            </div>
+            <hr>
+        </div>
+    </div>
+    
+    <div class="row d-flex flex-wrap justify-content-around">
+        <div class="card mb-3" style="max-width: 540px;" *ngFor="let emp of employee">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="assets/images/user.png" class="img-fluid rounded-start mx-3 my-2" alt="user" width="130px">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body lh-1">
+                  <p class="card-text"><span class="text-muted">Name :&nbsp;</span>{{emp.name}}</p>
+                  <p class="card-text"><span class="text-muted">Designation :&nbsp;</span>{{emp.designation}}</p>
+                  <p class="card-text"><span class="text-muted">Department :&nbsp;</span>{{emp.department}}</p>
+                  <p class="card-text"><span class="text-muted">Status:&nbsp;</span><span ngClass="badge {{emp.status=='Active' ? 'bg-success':'bg-danger'}}">{{emp.status}}</span></p>
+                  <a class="btn btn-outline-success btn-sm" [routerLink]="['/service/employee/',emp.id]">View Employee</a>&nbsp;
+                  <button class="btn btn-outline-danger btn-sm font-weight-bold">X</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  

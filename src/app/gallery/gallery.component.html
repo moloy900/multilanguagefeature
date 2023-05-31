@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row mt-3 galleryBorder p-4">
+        <div class="col-md-12">
+
+            <div class="d-flex">
+                <div class="varticalBar align-self-center"></div>&nbsp;&nbsp;
+                <h1>Image Gallery</h1>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque praesentium delectus eligendi aut
+                dicta reprehenderit illo esse atque quae fugit quas aperiam similique, earum explicabo? Veniam ad
+                sit, perferendis accusamus laborum commodi similique quibusdam at voluptatibus fugit impedit
+                necessitatibus aperiam laboriosam sunt facere quasi eum ipsam! Aliquam et, voluptatum reprehenderit
+                autem dolore velit dolorem natus officiis perspiciatis magni. Tempora deleniti nostrum recusandae
+                voluptatum non illo molestiae eos vitae officiis est sunt, quo rerum quod? Adipisci quaerat, illum
+                voluptas expedita delectus praesentium dicta sunt consectetur neque, hic numquam laudantium sapiente
+                voluptate totam suscipit, saepe dolorem iure repellendus quis! Culpa, iste cupiditate?</p>
+        </div>
+        <div class="col-md-12 mt-4 d-flex">
+           <ng-container *ngFor="let image of images">
+            <figure class="mx-3">
+                <img src="{{image.imgUrl}}" alt="" class="img-thumbnail">
+               <figcaption class="text-center">{{image.title}}</figcaption>
+            </figure>
+           </ng-container>
+        </div>
+    </div>
+</div>

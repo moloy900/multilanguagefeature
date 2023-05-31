@@ -1,0 +1,43 @@
+<div class="py-3">
+    <h3>Employee Details</h3>
+    <hr>
+    <div class="col-md-12 d-flex justify-content-center mb-4">
+        <div class="card" style="width:60vw;">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center mb-4">
+                        <img src="assets/images/user.png" alt="" width="150vw">
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <span>Name</span>
+                            <h5 class="text-primary">{{emp.name}}</h5>
+                            <hr>
+                        </div>
+                        <div>
+                            <span>Department</span>
+                            <h5 class="text-primary">{{emp.department}}</h5>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <span>Designation</span>
+                            <h5 class="text-primary">{{emp.designation}}</h5>
+                            <hr>
+                        </div>
+                        <div>
+                            <span>Status</span>
+                            <h5 class="text-primary">{{emp.status}}</h5>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <a class="btn btn-outline-success btn-sm" (click)="goback()"><fa-icon
+                                [icon]="angleleft"></fa-icon> Back to DashBoard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

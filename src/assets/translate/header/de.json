@@ -1,0 +1,40 @@
+{
+  "header": {
+    "menu": [
+
+      {
+        "text":"Heim",
+        "link":"home"
+      },
+      {
+        "text":"Über uns",
+        "link":"/aboutus"
+      },
+      {
+        "text":"Produkte",
+        "link":"/gallery"
+      },
+      {
+        "text":"Produkte verwalten",
+        "link":"/products"
+      },
+      {
+        "text":"Dienstleistungen",
+        "link":"/manageproduct"
+      },
+
+      {
+        "text": "Benutzer verwalten",
+        "link": "/manageuser"
+      },
+      {
+        "text":"Service",
+        "link":"/service"
+      },
+      {
+        "text":"Kontakt",
+        "link":"/contact"
+      }
+    ]
+  }
+}

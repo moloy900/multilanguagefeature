@@ -1,0 +1,22 @@
+.navbarbg {
+    background-color: #17252A;
+    margin: 0px;
+}
+
+.navbarcolor {
+    color: #FEFFFF;
+}
+
+.nav-link:hover{
+    background-color: #3AAFA9;
+    color: #DEF2F1;
+}
+
+.active{
+    background-color: #3AAFA9;
+    color: #ffffff !important;
+}
+
+.lang{
+    margin-left: 204px;
+}
