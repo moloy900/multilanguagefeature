@@ -1,0 +1,38 @@
+{
+  "header": {
+    "menu": [
+      {
+        "text": "Home",
+        "link": "home"
+      },
+      {
+        "text": "About us",
+        "link": "/aboutus"
+      },
+      {
+        "text": "Gallery",
+        "link": "/gallery"
+      },
+      {
+        "text": "Products",
+        "link": "/products"
+      },
+      {
+        "text": "Manage Products",
+        "link": "/manageproduct"
+      },
+      {
+        "text": "Manage User",
+        "link": "/manageuser"
+      },
+      {
+        "text": "Services",
+        "link": "/service/dataentry"
+      },
+      {
+        "text": "Contact",
+        "link": "/contact"
+      }
+    ]
+  }
+}

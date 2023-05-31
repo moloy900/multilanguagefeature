@@ -7,7 +7,8 @@ import { WebdesignComponent } from './webdesign/webdesign.component';
 import { GraphicdesignComponent } from './graphicdesign/graphicdesign.component';
 import { DataentryComponent } from './dataentry/dataentry.component';
 import { SeoserviceComponent } from './seoservice/seoservice.component';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { EmployeeComponent } from './employee/employee.component';
 
 
 @NgModule({
@@ -16,12 +17,14 @@ import { SeoserviceComponent } from './seoservice/seoservice.component';
     WebdesignComponent,
     GraphicdesignComponent,
     DataentryComponent,
-    SeoserviceComponent
+    SeoserviceComponent,
+    EmployeeComponent
 
   ],
   imports: [
     CommonModule,
-    ServicesRoutingModule
+    ServicesRoutingModule,
+    FontAwesomeModule
   ]
 })
 export class ServicesModule { }

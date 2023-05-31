@@ -1,0 +1,70 @@
+{
+  "employee": [
+    {
+      "name":"Moloy",
+      "designation":"Frontend Developer",
+      "department":"Development",
+      "status":"Active"
+    },
+    {
+      "name":"Ram",
+      "designation":"Angular Developer",
+      "department":"Development",
+      "status":"Active"
+    },
+    {
+      "name":"Sam",
+      "designation":"Graphic Designer",
+      "department":"Design",
+      "status":"Active"
+    },
+    {
+      "name":"Jadhu",
+      "designation":"Web Developer",
+      "department":"Development",
+      "status":"Active"
+    },
+    {
+      "name":"Madhu",
+      "designation":"Web Designer",
+      "department":"Design",
+      "status":"Active"
+    },
+    {
+      "name":"Sanu",
+      "designation":"React Developer",
+      "department":"Development",
+      "status":"Active"
+    },
+    {
+      "name":"Manu",
+      "designation":"Javascript Developer",
+      "department":"Development",
+      "status":"Active"
+    },
+    {
+      "name":"Ananda",
+      "designation":"UX Developer",
+      "department":"Development",
+      "status":"Active"
+    },
+    {
+      "name":"Riya",
+      "designation":"Manager",
+      "department":"Management",
+      "status":"Active"
+    },
+    {
+      "name":"Neha",
+      "designation":"HR",
+      "department":"Human Resource",
+      "status":"Active"
+    },
+    {
+      "name":"Denish",
+      "designation":"Web Designer",
+      "department":"Design",
+      "status":"Active"
+    }
+  ]
+}
