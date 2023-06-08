@@ -5,36 +5,50 @@
         <div class="card" style="width:60vw;">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-12 d-flex justify-content-center mb-4">
+                    <div  class="text-end" [routerLink]="['/service/employee/',emp.id]" 
+                    [queryParams]="{editMode:true}">
+                        <fa-icon [icon]="editIcon"></fa-icon>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center mb-4 mt-0">
                         <img src="assets/images/user.png" alt="" width="150vw">
                     </div>
                     <div class="col-md-6">
                         <div>
-                            <span>Name</span>
-                            <h5 class="text-primary">{{emp.name}}</h5>
+                            <label>Name:&nbsp;</label>
+                            <span class="text-primary" *ngIf="!editMode">{{emp.name}}</span>
+                            <input type="text" value="{{emp.name}}" *ngIf="editMode" class="form-control">
                             <hr>
                         </div>
                         <div>
-                            <span>Department</span>
-                            <h5 class="text-primary">{{emp.department}}</h5>
+                            <label>Department:&nbsp;</label>
+                            <span class="text-primary" *ngIf="!editMode">{{emp.department}}</span>
+                            <input type="text" value="{{emp.department}}" *ngIf="editMode" class="form-control">
                             <hr>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div>
-                            <span>Designation</span>
-                            <h5 class="text-primary">{{emp.designation}}</h5>
+                            <label>Designation:&nbsp;</label>
+                            <span class="text-primary" *ngIf="!editMode">{{emp.designation}}</span>
+                            <input type="text" value="{{emp.designation}}" *ngIf="editMode" class="form-control">
                             <hr>
                         </div>
                         <div>
-                            <span>Status</span>
-                            <h5 class="text-primary">{{emp.status}}</h5>
+                            <label>Status:&nbsp;</label>
+                            <span class="text-primary" *ngIf="!editMode">{{emp.status}}</span>
+                            <input type="text" value="{{emp.status}}" *ngIf="editMode" class="form-control">
                             <hr>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <a class="btn btn-outline-success btn-sm" (click)="goback()"><fa-icon
+                    <div class="col-md-12" *ngIf="!editMode">
+                        <a class="btn btn-outline-success btn-sm" (click)="goback()" ><fa-icon
                                 [icon]="angleleft"></fa-icon> Back to DashBoard</a>
+                                
+                    </div>
+                    <div class="col-md-12 text-center" *ngIf="editMode">
+                        <button class="btn btn-outline-success">Save Details</button> &nbsp;
+                        <button class="btn btn-outline-dark" [routerLink]="['/service/employee/',emp.id]">Discard</button>
+
                     </div>
                 </div>
             </div>
