@@ -36,7 +36,7 @@
                   <p class="card-text"><span class="text-muted">Designation :&nbsp;</span>{{emp.designation}}</p>
                   <p class="card-text"><span class="text-muted">Department :&nbsp;</span>{{emp.department}}</p>
                   <p class="card-text"><span class="text-muted">Status:&nbsp;</span><span ngClass="badge {{emp.status=='Active' ? 'bg-success':'bg-danger'}}">{{emp.status}}</span></p>
-                  <a class="btn btn-outline-success btn-sm" [routerLink]="['/service/employee/',emp.id]">View Employee</a>&nbsp;
+                  <a class="btn btn-outline-success btn-sm" [routerLink]="['/service/employee/',emp.id]" [queryParams]="{empName:emp.name,status:emp.status}">View Employee</a>&nbsp;
                   <button class="btn btn-outline-danger btn-sm font-weight-bold">X</button>
                   
                 </div>
